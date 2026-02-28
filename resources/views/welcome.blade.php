@@ -24,11 +24,17 @@
         <div class="w-full max-w-4xl bg-[#111111] border border-[#222222] rounded-lg shadow-2xl transition-all duration-300">
             <div class="flex flex-col items-start gap-4 p-16">
                 <div class="space-y-1">
-                    <h1 class="text-white text-[1.1rem] font-bold tracking-tight">
-                        Sascha Danu Arroyan
+                    <h1 class="text-[#888888] text-sm">
+                        Nama : Sascha Danu Arroyan
                     </h1>
                     <p class="text-[#888888] text-sm">
-                        20230140043
+                        Nim : 20230140043
+                    </p>
+                    <p class="text-[#888888] text-sm">
+                        Program Studi : Teknik Informatika
+                    </p>
+                    <p class="text-[#888888] text-sm">
+                        Hobi : Menonton Film
                     </p>
                 </div>
                 
