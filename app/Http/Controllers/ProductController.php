@@ -54,5 +54,12 @@ class ProductController extends Controller
 
         return view('products.edit', compact('product', 'users'));
     }
-    
+
+    public function delete($id)
+    {
+        $product = Product::findOrFail($id);
+        $product->delete();
+
+        return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
+    }
 }   
