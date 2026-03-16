@@ -25,5 +25,9 @@ class ProductController extends Controller
 
         return redirect()->route('products.index')->with('success', 'Product created successfully.');
     }
-
+    public function create()
+    {
+        $users = User::orderBy('name')->get();
+        return view('products.create', compact('users'));
+    }
 }
