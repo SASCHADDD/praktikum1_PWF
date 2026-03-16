@@ -35,4 +35,17 @@ class ProductController extends Controller
         $product = Product::findOrfail($id);
         return view('products.show', compact('product'));
     }
+    public function update(Request $request,$id)
+    {
+        $product = Product::findOrFail($id);
+        
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'quantity' => 'required|integer',
+            'price' => 'required|numeric',
+            'user_id'=>'required|exists:users,id',
+        ]);
+        $product->update($validated);
+        return redirect()->route('products.index')->with('success', 'Product updated successfully.');
+    }
 }   
