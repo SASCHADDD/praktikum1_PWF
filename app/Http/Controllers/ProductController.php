@@ -38,7 +38,7 @@ class ProductController extends Controller
     public function update(Request $request,$id)
     {
         $product = Product::findOrFail($id);
-        
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'quantity' => 'required|integer',
@@ -48,4 +48,11 @@ class ProductController extends Controller
         $product->update($validated);
         return redirect()->route('products.index')->with('success', 'Product updated successfully.');
     }
+    public function edit($product)
+    {
+        $users = User::orderBy('name')->get();
+
+        return view('products.edit', compact('product', 'users'));
+    }
+    
 }   
