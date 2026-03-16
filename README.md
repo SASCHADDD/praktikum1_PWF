@@ -1,3 +1,10 @@
+Praktikum 4 (CRUD)
+<img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 21 05 AM" src="https://github.com/user-attachments/assets/3e55ca31-0b2a-455d-bc19-1dec4fd67b31" />
+<img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 20 51 AM" src="https://github.com/user-attachments/assets/d018874c-cb2e-46ab-ac67-ceb2c32ccc1e" />
+<img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 20 47 AM" src="https://github.com/user-attachments/assets/38a4302e-54a6-4810-8a4c-5fc81ce0b58d" />
+<img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 20 30 AM" src="https://github.com/user-attachments/assets/bb84714f-748d-4b5f-a293-52803b5ead5d" />
+
+
 Praktikum 3 (ERD,MIGRATION,MODEL,DATABASE)
 #ERD
 <img width="864" height="413" alt="Screenshot 2026-03-11 at 8 53 02 PM" src="https://github.com/user-attachments/assets/4b4d3c8c-3a72-425b-bfbb-6e92580665e7" />
