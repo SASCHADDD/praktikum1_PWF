@@ -118,7 +118,7 @@
                             </div>
                         </div>
 
-                        {{-- Quantity --}}
+                        {{-- Qty --}}
                         <div class="flex items-center px-5 py-4">
                             <div class="w-32 shrink-0 text-sm text-gray-500 dark:text-gray-400">
                                 Quantity
@@ -126,16 +126,16 @@
 
                             <div>
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-                                    {{ $product->quantity > 10
+                                    {{ $product->qty > 10
                                         ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300'
                                         : 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300' }}">
 
-                                    {{ $product->quantity }}
+                                    {{ $product->qty }}
 
                                 </span>
 
                                 <span class="ml-2 text-xs text-gray-500 dark:text-gray-400">
-                                    {{ $product->quantity > 10 ? 'In Stock' : 'Low Stock' }}
+                                    {{ $product->qty > 10 ? 'In Stock' : 'Low Stock' }}
                                 </span>
                             </div>
                         </div>

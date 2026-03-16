@@ -38,9 +38,9 @@
                     </p>
                 </div>
                 
-                <button class="mt-4 bg-white text-black px-6 py-2.5 rounded-md text-sm font-semibold hover:bg-gray-200 transition-colors duration-200 shadow-md">
+                <a href="{{ route('product.index') }}" class="mt-4 bg-white text-black px-6 py-2.5 rounded-md text-sm font-semibold hover:bg-gray-200 transition-colors duration-200 shadow-md inline-block">
                     Modul Pertemuan 1
-                </button>
+                </a>
             </div>
         </div>
     </body>

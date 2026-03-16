@@ -87,10 +87,10 @@
 
                                         <td class="px-6 py-4 text-gray-600 dark:text-gray-300">
                                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-                                                {{ $product->quantity > 10
+                                                {{ $product->qty > 10
                                                     ? 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-300'
                                                     : 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300' }}">
-                                                {{ $product->quantity }}
+                                                {{ $product->qty }}
                                             </span>
                                         </td>
 
@@ -204,12 +204,6 @@
                         </table>
                     </div>
 
-                    {{-- Pagination --}}
-                    @if ($products->hasPages())
-                        <div class="mt-4">
-                            {{ $products->links() }}
-                        </div>
-                    @endif
 
                 </div>
             </div>
