@@ -13,21 +13,26 @@ class ProductController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'quantity' => 'required|integer',
-            'price' => 'required|numeric',
-            'user_id'=>'required|exists:users,id',
-        ]);
+        {
+            $validatedData = $request->validate([
+                'name' => 'required|string|max:255',
+                'quantity' => 'required|integer',
+                'price' => 'required|numeric',
+                'user_id'=>'required|exists:users,id',
+            ]);
 
-        Product::create($validatedData);
+            Product::create($validated);
 
-        return redirect()->route('products.index')->with('success', 'Product created successfully.');
-    }
+            return redirect()->route('products.index')->with('success', 'Product created successfully.');
+        }
     public function create()
+        {
+            $users = User::orderBy('name')->get();
+            return view('products.create', compact('users'));
+        }
+    public function show ($id)
     {
-        $users = User::orderBy('name')->get();
-        return view('products.create', compact('users'));
+        $product = Product::findOrfail($id);
+        return view('products.show', compact('product'));
     }
-}
+}   
