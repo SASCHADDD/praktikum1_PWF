@@ -11,50 +11,52 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('products.index', compact('products'));
+        return view('product.index', compact('products'));
     }
 
     public function store(Request $request)
-        {
-            $validated = $request->validate([
-                'name' => 'required|string|max:255',
-                'quantity' => 'required|integer',
-                'price' => 'required|numeric',
-                'user_id'=>'required|exists:users,id',
-            ]);
-
-            Product::create($validated);
-
-            return redirect()->route('products.index')->with('success', 'Product created successfully.');
-        }
-    public function create()
-        {
-            $users = User::orderBy('name')->get();
-            return view('products.create', compact('users'));
-        }
-    public function show ($id)
     {
-        $product = Product::findOrfail($id);
-        return view('products.show', compact('product'));
-    }
-    public function update(Request $request,$id)
-    {
-        $product = Product::findOrFail($id);
-
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'quantity' => 'required|integer',
+            'qty' => 'required|integer',
             'price' => 'required|numeric',
-            'user_id'=>'required|exists:users,id',
+            'user_id' => 'required|exists:users,id',
         ]);
-        $product->update($validated);
-        return redirect()->route('products.index')->with('success', 'Product updated successfully.');
+
+        Product::create($validated);
+
+        return redirect()->route('product.index')->with('success', 'Product created successfully.');
     }
-    public function edit($product)
+
+    public function create()
     {
         $users = User::orderBy('name')->get();
+        return view('product.create', compact('users'));
+    }
 
-        return view('products.edit', compact('product', 'users'));
+    public function show(Product $product)
+    {
+        return view('product.view', compact('product'));
+    }
+
+    public function edit(Product $product)
+    {
+        $users = User::orderBy('name')->get();
+        return view('product.edit', compact('product', 'users'));
+    }
+
+    public function update(Request $request, Product $product)
+    {
+        $validated = $request->validate([
+            'name' => 'sometimes|string|max:255',
+            'qty' => 'sometimes|integer',
+            'price' => 'sometimes|numeric',
+            'user_id' => 'sometimes|exists:users,id',
+        ]);
+
+        $product->update($validated);
+
+        return redirect()->route('product.index')->with('success', 'Product updated successfully.');
     }
 
     public function delete($id)
@@ -62,6 +64,6 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $product->delete();
 
-        return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
+        return redirect()->route('product.index')->with('success', 'Product berhasil dihapus');
     }
 }   
