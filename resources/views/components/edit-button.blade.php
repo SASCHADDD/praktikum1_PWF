@@ -1,0 +1,16 @@
+<a href="{{ $url }}"
+   class="p-1.5 rounded-md text-gray-400 hover:text-amber-600 hover:bg-amber-50 dark:hover:bg-amber-900/30 transition"
+   title="Edit">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="h-4 w-4"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor">
+
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L12 20.414 9 21l.586-3L17.586 3.586z" />
+    </svg>
+</a>

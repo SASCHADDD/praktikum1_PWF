@@ -43,62 +43,11 @@
                         {{-- Action Buttons --}}
                         <div class="flex items-center gap-2">
 
-                            <a href="{{ route('product.edit', $product) }}"
-                               class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg border border-amber-300 dark:border-amber-600 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/30 transition">
+                            {{-- Edit --}}
+                            <x-edit-button url="{{ route('product.edit', $product) }}" />
 
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     class="h-4 w-4"
-                                     fill="none"
-                                     viewBox="0 0 24 24"
-                                     stroke="currentColor">
-
-                                    <path stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="2"
-                                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0
-                                             002 2h11a2 2 0
-                                             002-2v-5m-1.414-9.414
-                                             a2 2 0 112.828 2.828L12
-                                             20.414 9 21l.586-3L17.586
-                                             3.586z"/>
-                                </svg>
-
-                                Edit
-                            </a>
-
-                            <form action="{{ route('product.delete', $product->id) }}"
-                                  method="POST"
-                                  onsubmit="return confirm('Are you sure you want to delete this product?')">
-
-                                @csrf
-                                @method('DELETE')
-
-                                <button type="submit"
-                                        class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg border border-red-300 dark:border-red-600 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                         class="h-4 w-4"
-                                         fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor">
-
-                                        <path stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="2"
-                                              d="M19 7l-.867
-                                                 12.142A2 2 0
-                                                 0116.138 21H7.862a2 2 0
-                                                 01-1.995-1.858L5
-                                                 7m5 4v6m4-6v6M1
-                                                 7h22M10 3h4a1
-                                                 1 0 011 1v2H9V4a1
-                                                 1 0 011-1z"/>
-                                    </svg>
-
-                                    Delete
-                                </button>
-
-                            </form>
+                            {{-- Delete --}}
+                            <x-delete-button url="{{ route('product.delete', $product->id) }}" />
 
                         </div>
                     </div>
