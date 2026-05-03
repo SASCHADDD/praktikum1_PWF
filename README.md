@@ -1,3 +1,9 @@
+Praktikum 6
+
+Praktikum 5
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 1 49 45 AM" src="https://github.com/user-attachments/assets/46021528-e2fb-4258-9f71-4d5547cbb826" />
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 1 54 18 AM" src="https://github.com/user-attachments/assets/fa76dd9e-b467-4f06-b547-47b9bde75102" />
+
 Praktikum 4 (CRUD)
 <img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 21 05 AM" src="https://github.com/user-attachments/assets/3e55ca31-0b2a-455d-bc19-1dec4fd67b31" />
 <img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 20 51 AM" src="https://github.com/user-attachments/assets/d018874c-cb2e-46ab-ac67-ceb2c32ccc1e" />
