@@ -1,8 +1,16 @@
+Praktikum 7
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 21 48 AM" src="https://github.com/user-attachments/assets/05fa9148-785e-49d7-af9d-9bc8ce03ec3a" />
+
 Praktikum 6
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 15 33 AM" src="https://github.com/user-attachments/assets/3347b078-8ecf-4508-9a73-3b49dacb6bd1" />
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 15 11 AM" src="https://github.com/user-attachments/assets/0eaed098-816a-4055-be00-38cf72adeecd" />
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 14 50 AM" src="https://github.com/user-attachments/assets/1885cabb-dfa5-4e72-a477-c57050a6f1c3" />
 
 Praktikum 5
 <img width="1680" height="1050" alt="Screenshot 2026-05-04 at 1 49 45 AM" src="https://github.com/user-attachments/assets/46021528-e2fb-4258-9f71-4d5547cbb826" />
-<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 1 54 18 AM" src="https://github.com/user-attachments/assets/fa76dd9e-b467-4f06-b547-47b9bde75102" />
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 06 53 AM" src="https://github.com/user-attachments/assets/4319dc34-fe54-482d-80ed-82a336a1b86a" />
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 07 14 AM" src="https://github.com/user-attachments/assets/4505b10a-a017-40e2-b223-ac78f347441b" />
+<img width="1680" height="1050" alt="Screenshot 2026-05-04 at 2 07 38 AM" src="https://github.com/user-attachments/assets/7ea92101-6136-4b3c-b2ab-9d818a0b4172" />
 
 Praktikum 4 (CRUD)
 <img width="1680" height="1050" alt="Screenshot 2026-03-17 at 1 21 05 AM" src="https://github.com/user-attachments/assets/3e55ca31-0b2a-455d-bc19-1dec4fd67b31" />
